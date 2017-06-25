@@ -1,0 +1,31 @@
+@font-face {
+    font-family: saucerFont;
+    src: url(../assets/fonts/SaucerBB.ttf);
+}
+
+
+@font-face {
+    font-family: predatorsFont;
+    src: url(../assets/fonts/CodePredators-Regular.otf);
+}
+
+@font-face {
+    font-family: dampFont;
+    src: url(../assets/fonts/DampfPlatz.ttf);
+}
+
+.menuHeader {
+    color: #ba1d01;
+    font-family: predatorsFont; 
+    font-size: 28px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.menuStyle {
+    text-decoration-line: none;
+    font-family: dampFont; 
+    font-size: 60px;
+    font-weight: 500;
+    color: #cc9602;
+}

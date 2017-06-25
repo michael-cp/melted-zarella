@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h3 class="page-header">{{pageTitle}}&nbsp;Selection</h3>
+  </div>
+
+  <div *ngFor='let product of products'>
+
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center" style="border:0px solid #cecece;">
+      <a class="thumbnail" href="javascript:void;" style="text-decoration-line: none">
+        <!--<img class="img-responsive" src="http://placehold.it/400x300" alt="">-->
+        <img src="{{mainUrl}}{{product.imageFileLocation}}{{product.imageFileName}}" width="400px" height="300px" class="img-rounded">
+        <h4>{{product.name}}</h4>
+        <div class="col-lg-12 col-md-10 col-sm-9 text-left" style="border:1px solid #cecece;">
+
+        </div>
+        <p class="caption">
+          {{product.description}} <br/>
+
+      <span *ngFor='let price of prices' class="text-center">
+        <span *ngIf='product.productId == price.productId'>
+          <span class="text-warning" style="font-size: 14px; font-weight: 300">${{price.price}}</span> <br/>
+        </span>
+      </span>          
+        </p>
+      </a>
+    </div>
+  </div>
